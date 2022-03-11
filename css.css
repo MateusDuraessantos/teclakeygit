@@ -5,6 +5,19 @@
     margin: 0;
 }
 
+.bolha {
+    position: absolute;
+    z-index: 100;
+    border-radius: 100px;
+    border: 1px solid #00ADFF;
+    background: #00ADFF;
+    height: 100px;
+    width: 100px;
+}
+
+/*  */
+
+
 body {
     position: relative;
     display: flex;
@@ -74,7 +87,7 @@ nav p {
     background: rgb(133, 28, 28);
 }
 
-.banner{
+.banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
@@ -83,16 +96,25 @@ nav p {
     background: goldenrod;
 }
 
-.banner{
-    
+.text-banner {
+    display: flex;
+    font-weight: 200;
+    color: #FFEDE3;
+    color: #FFEDE3;
+    line-height: 80px;
+    font-size: 64px;
+    font-weight: 800;
+
 }
 
+.bar {
+    font-weight: 500;
+
+}
 
 /* Main */
 
-main{
-
-}
+main {}
 
 /* Footer */
 
