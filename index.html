@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt/br">
+<html lang="pt/br" id="inicio">
 
 <head>
     <meta charset="UTF-8">
@@ -9,18 +9,25 @@
     <link rel="stylesheet" href="css.css">
 </head>
 
-<body>
+<body id="subir">
+
+    <a href="#subir"><img class="top" src="assets/icons/arrow.svg" alt="Ir para o topo"></a>
 
     <div class="social-media">
 
         <!-- Intagram -->
-        <a href="https://www.instagram.com/teclakey/"><img class="icon-social-media" src="assets/icons/instagram.svg"
-                alt="Instagram do studio TeclaKey"></a>
+        <a href="https://www.instagram.com/teclakey/" target="blank_">
+            <img class="icon-social-media" src="assets/icons/instagram.svg" alt="Instagram do studio TeclaKey">
+        </a>
         <!-- Facebook -->
-        <a href=""><img class="icon-social-media img-social-media-1" src="assets/icons/facebook.svg"
-                alt="Facebook do studio TeclaKey"></a>
+        <a href="" target="blank_">
+            <img class="icon-social-media img-social-media-1" src="assets/icons/facebook.svg"
+                alt="Facebook do studio TeclaKey">
+        </a>
         <!-- Email -->
-        <a href=""><img class="icon-social-media" src="assets/icons/email.svg" alt="Email do studio TeclaKey"></a>
+        <a href="" target="blank_">
+            <img class="icon-social-media" src="assets/icons/email.svg" alt="Email do studio TeclaKey">
+        </a>
 
     </div>
 
@@ -31,14 +38,26 @@
                 <p>TeclaKey</p>
             </div>
             <nav>
-                <p class="nav-p">início</p>
+                <a href="#inicio">
+                    <p class="nav-p">início</p>
+                </a>
+
                 <p>|</p>
-                <p class="nav-p">sobre</p>
+
+                <a href="#sobre">
+                    <p class="nav-p">sobre</p>
+                </a>
+
                 <p>|</p>
-                <p class="nav-p">contato</p>
+
+                <a href="#contato">
+                    <p class="nav-p">contato</p>
+                </a>
             </nav>
         </div>
     </header>
+
+
 
     <div class="banner-cont">
 
@@ -46,27 +65,83 @@
 
             <div class="text-banner">
                 <div class="bar">
+                    <p>&lt;
                     <p>
-                        <<p>
                     </p>
                     Saindo do passado em direção ao futuro</p>
-                    <p>/></p>
+                    <p>/&gt;</p>
                 </div>
                 <button class="quero">Quero um site</button>
             </div>
             <div></div>
         </div>
+
+
+        <img class="lines" src="assets/icons/lines.svg" alt="">
+
     </div>
 
-    <div class="bubble">
-        <div class="bubble-son">
-            
-        </div>
+
+
+    <div class="container-bubble">
+        <img class="bubble-img" src="assets/icons/bubble.svg" alt="">
     </div>
+
+    <!-- main -->
 
     <main>
+        <div class="cont-about" id="sobre">
+            <div class="about">
+                <div class="title-about">
+                    <P>
+                        &lt;</P>
+                    <h2>SOBRE</h2>
+                    <P>&gt;</P>
+                </div>
+                <p class="text-about"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+
+            <div class="background-about">
+                <div class="red"></div>
+                <div class="orange"></div>
+            </div>
+        </div>
+
+        <div class="cont-contato" id="contato">
+            <div class="contato">
+                <div class="title-contato">
+                    <P>
+                        &lt;</P>
+                    <h4>Entre em contato</h4>
+                    <P>&gt;</P>
+                </div>
+
+                <div class="infos-contato">
+                    <p><strong>WhatsApp:</strong>55+ (11) 96593-9822</p>
+                    <p><strong>Email:</strong>teclakeystudio@gmail.com</p>
+                    <p><strong>Instagram:</strong>@teclakey</p>
+                </div>
+                <div class="social-media-contato">
+                    <img src="assets/icons/whatsapp.svg" alt="icone do WhatsApp">
+                    <a href="https://www.instagram.com/teclakey/"><img src="assets/icons/instagram.svg" alt="icone do instagram"></a>
+                    <img src="assets/icons/email.svg" alt="icone do G-mail">
+
+                </div>
+            </div>
+
+            <div class="background-contato">
+                <div class="cyan"> </div>
+            </div>
+
+        </div>
 
     </main>
+
 
     <footer>
         <img src="assets/logo.svg" alt="logomarca da empresa Tecla Key">
