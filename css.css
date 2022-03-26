@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    
 }
 
 html {
@@ -41,7 +42,7 @@ body::-webkit-scrollbar-thumb {
     height: calc(100vh - 200px);
     width: 30px;
     right: 40px;
-    z-index: 2;
+    z-index: 100;
 }
 
 .icon-social-media {
@@ -50,8 +51,14 @@ body::-webkit-scrollbar-thumb {
     transition: .3s;
 }
 
+.link-zap {
+    padding: 0;
+    margin: 0;
+    width: 32px;
+}
+
 .icon-social-media-1 {
-    width: 102%;
+    width: 12px;
 
 }
 
@@ -68,6 +75,7 @@ body::-webkit-scrollbar-thumb {
     right: 40px;
     bottom: 40px;
     transition: .3s;
+    z-index: 100;
 
 }
 
@@ -116,6 +124,7 @@ body::-webkit-scrollbar-thumb {
     height: 120px;
 }
 
+
 .bubble-img {
     width: 100%;
     z-index: 10;
@@ -126,6 +135,37 @@ body::-webkit-scrollbar-thumb {
     animation-name: bubble;
     animation-duration: 70s;
     animation-iteration-count: infinite;
+}
+
+
+.container-bubble-1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -250px;
+    right: -50px;
+    width: 500px;
+    height: 500px;
+    /* background: steelblue; */
+}
+
+.bubble-img-without-animation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    backdrop-filter: blur(20px);
+    border-radius: 500px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.308) 0%, #ff55001e 100%);
+    box-shadow: 10px 10px 10px #00000069;
+    z-index: 10;
+}
+
+.tentaculo-1 {
+    position: absolute;
+    width: 95%;
+    left: 0;
 }
 
 /*  */
@@ -158,7 +198,7 @@ header {
 .header-logo {
     display: flex;
     align-items: center;
-    color: #FFF6E9;
+    color: #FFEDE3;
 }
 
 .logo {
@@ -170,11 +210,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
+    width: 550px;
 }
 
 nav p {
-    color: #FFF6E9;
+    color: #FFEDE3;
     font-size: 20px;
     border: none;
     background: none;
@@ -199,8 +239,8 @@ nav p {
 
 .lines {
     position: absolute;
-    width: 70vw;
-    max-width: 1000px;
+    width: 50vw;
+    max-width: 900px;
     right: 0;
     z-index: 1;
 }
@@ -219,7 +259,7 @@ nav p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #FFF6E9;
+    color: #FFEDE3;
     line-height: 80px;
     font-size: 64px;
     font-weight: 800;
@@ -250,7 +290,7 @@ nav p {
     font-family: 'poppins';
     font-weight: 300;
     background: #0085FF;
-    color: #FFF6E9;
+    color: #FFEDE3;
     transition: .2s;
     box-shadow: 10px 10px 10px #0000007c;
     cursor: pointer;
@@ -272,7 +312,6 @@ nav p {
     transform: skewy(-5deg);
     backdrop-filter: blur(5px);
     background: #fff6e902;
-    border: 1px solid #FFF6E90a;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
     border-radius: 15px;
     overflow: hidden;
@@ -287,15 +326,15 @@ nav p {
 }
 
 .text-about {
-    color: #FFF6E9;
+    color: #FFEDE3;
     font-size: 24px;
     font-weight: 300;
+    line-height: 34px;
 }
 
 .red {
     position: absolute;
     bottom: 0;
-    background: #F11C1C;
     filter: blur(100px);
     width: 300px;
     height: 100px;
@@ -304,7 +343,6 @@ nav p {
 .orange {
     position: absolute;
     right: 100px;
-    background: #FF5700;
     filter: blur(100px);
     width: 300px;
     height: 100px;
@@ -316,7 +354,7 @@ nav p {
 
 .title-about p {
     display: inline;
-    color: #FFF6E9;
+    color: #FFEDE3;
     font-size: 48px;
     font-weight: 300;
 }
@@ -325,10 +363,148 @@ h2 {
     display: inline;
     font-size: 64px;
     font-weight: 600;
-    color: #FFF6E9;
+    color: #FFEDE3;
 }
 
+/* O que podemos te oferecer */
+.h1-who-we-are {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFEDE3;
+    width: 100%;
+}
+
+.h1-who-we-are p {
+    display: inline;
+    color: #FFEDE3;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+
+h1 {
+    display: inline;
+    font-size: 64px;
+    font-weight: 600;
+    color: #FFEDE3;
+}
+
+.container-oferecemos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+}
+
+.grid-oferecemos {
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    z-index: 3;
+    max-width: 1000px;
+    font-size: 24px;
+    color: #FFEDE3;
+    gap: 15px;
+}
+
+.competencias-1, .competencias-2 {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin: auto;
+    width: 350px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+}
+
+.competencias-1 {
+    margin-right: 75px;
+    
+}
+
+.competencias-2 {
+    margin-left: 75px;
+    
+}
+
+.text-competencia{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+.title-oferecemos {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.grid-backgrounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 15px;
+}
+
+.background-competencia-1, .background-competencia-2, .background-competencia-3, .background-competencia-4 {
+    backdrop-filter: blur(15px);
+    background: #fff6e902;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
+    overflow: hidden;
+    height: 400px;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+/* ------------- BACKGROUND 1 ------------- */
+
+.background-competencia-1 {
+    transform: skewy(5deg);
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+}
+
+/* ------------- BACKGROUND 2 ------------- */
+.background-competencia-2 {
+    transform: skewy(5deg) translatey(51px);
+    border-radius: 15px;
+    width: 485px;
+
+
+}
+
+/* ------------- BACKGROUND 3 ------------- */
+.background-competencia-3 {
+    transform: skewy(5deg);
+    width: 485px;
+    justify-self: flex-end;
+    border-radius: 15px;
+
+}
+
+/* ------------- BACKGROUND 4 ------------- */
+.background-competencia-4 {
+    transform: skewy(5deg) translatey(51px);
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+
+}
+
+
 /* contato */
+
+.cont-to-line-cyan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: calc(100vw - 12px);
+    max-height: 800px;
+}
 
 .cont-container {
     position: relative;
@@ -348,12 +524,33 @@ h2 {
     align-items: center;
     justify-content: space-between;
     height: 40%;
-    z-index: 1;
+    z-index: 3;
 }
 
-.social-media-contato img {
-    height: 22px;
-    margin-right: 23px;
+.social-media-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 180px;
+}
+
+.insta, .email, .whats, .social-media-contato a {}
+
+.insta {
+    height: 28px;
+}
+
+.insta img {
+    height: 100%;
+}
+
+.email {
+    height: 26px;
+}
+
+.whats {
+    height: 29px;
 }
 
 .background-contato {
@@ -362,9 +559,8 @@ h2 {
     bottom: 0;
     margin: auto;
     transform: skewy(-5deg);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     background: #fff6e902;
-    border: 1px solid #06868613;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
     border-radius: 15px;
     overflow: hidden;
@@ -372,16 +568,31 @@ h2 {
     height: 600px;
     max-height: 500px;
     max-width: 1000px;
+    z-index: 2;
 }
+
 
 .cyan {
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     filter: blur(100px);
     background: #068686;
     width: 100px;
     height: 300px;
 }
+
+.cyan-1 {
+    right: 0;
+    bottom: 100px;
+}
+
+.line-cyan {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 
 .title-contato {
     display: inline;
@@ -390,7 +601,7 @@ h2 {
 
 .title-contato p {
     display: inline;
-    color: #FFF6E9;
+    color: #FFEDE3;
     font-size: 48px;
     font-weight: 300;
 }
@@ -399,11 +610,11 @@ h4 {
     display: inline;
     font-size: 64px;
     font-weight: 600;
-    color: #FFF6E9;
+    color: #FFEDE3;
 }
 
 .infos-contato {
-    color: #FFF6E9;
+    color: #FFEDE3;
     font-size: 18px;
 }
 
@@ -425,7 +636,7 @@ footer {
     justify-content: center;
     width: 100%;
     margin: 120px 0 40px 0;
-    color: #FFF6E9;
+    color: #FFEDE3;
     font-size: 16px;
 }
 
