@@ -149,7 +149,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    max-width: 1300px;
+    max-width: 1000px;
     height: 100px;
     background: #161616;
     transition: .2s;
@@ -210,7 +210,7 @@ nav p {
     display: grid;
     grid-template-columns: 770px 1fr;
     margin: auto;
-    max-width: 1300px;
+    max-width: 1000px;
     width: 80%;
     height: 70%;
     z-index: 2;
@@ -268,28 +268,12 @@ nav p {
 
 /* Main */
 
-.cont-about {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 70vh;
-    margin: auto;
-}
 
-.about {
-    width: calc(100% - 400px);
-    z-index: 2;
-}
-
-.background-about {
+.background-about{
     position: absolute;
     z-index: 1;
     top: 0;
     bottom: 0;
-    width: 100%;
-    height: calc(100vh - 200px);
     margin: auto;
     transform: skewy(-5deg);
     backdrop-filter: blur(5px);
@@ -298,7 +282,23 @@ nav p {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
     border-radius: 15px;
     overflow: hidden;
+
+    width: 100%;
+    max-height: 500px;
+    max-width: 1000px;
 }
+
+.about {
+    width: calc(100% - 150px);
+    z-index: 2;
+}
+
+.text-about {
+    color: #FFF6E9;
+    font-size: 24px;
+    font-weight: 300;
+}
+
 
 .red {
     position: absolute;
@@ -336,44 +336,38 @@ h2 {
     color: #FFF6E9;
 }
 
-.text-about {
-    color: #FFF6E9;
-    font-size: 24px;
-    font-weight: 300;
-}
-
 /* contato */
 
-.cont-contato {
+.cont-container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    height: 80vh;
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+    max-height: 800px;
     margin: auto;
 }
 
-.contato{
+.contato {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 55%;
+    height: 40%;
     z-index: 1;
 }
 
-.social-media-contato img{
+.social-media-contato img {
     height: 22px;
     margin-right: 23px;
-}   
+}
 
 .background-contato {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
-    height: 600px;
     margin: auto;
     transform: skewy(-5deg);
     backdrop-filter: blur(5px);
@@ -382,9 +376,14 @@ h2 {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
     border-radius: 15px;
     overflow: hidden;
+
+    width: 100%;
+    height: 600px;
+    max-height: 500px;
+    max-width: 1000px;
 }
 
-.cyan{
+.cyan {
     position: absolute;
     bottom: 0;
     filter: blur(100px);
@@ -412,7 +411,7 @@ h4 {
     color: #FFF6E9;
 }
 
-.infos-contato{
+.infos-contato {
     color: #FFF6E9;
     font-size: 18px;
 }
