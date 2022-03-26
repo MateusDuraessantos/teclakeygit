@@ -251,7 +251,7 @@ nav p {
     font-size: 24px;
     font-family: 'poppins';
     font-weight: 300;
-    background: #363636;
+    background: #0085FF;
     color: #FFF6E9;
     transition: .2s;
     box-shadow: 10px 10px 10px #0000007c;
@@ -259,7 +259,7 @@ nav p {
 }
 
 .quero:hover {
-    background: #161616;
+    background: #005780;
     transition: .2s;
 }
 
