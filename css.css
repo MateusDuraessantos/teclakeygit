@@ -78,7 +78,6 @@ body::-webkit-scrollbar-thumb {
 
 /* bubble */
 
-
 @keyframes bubble {
     0% {
         transform: translate(0, 0);
