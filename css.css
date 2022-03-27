@@ -10,7 +10,23 @@
 :root {
     --text-size: 24px;
     --text-height: 30px;
+
     --mg-top: 70px;
+
+}
+
+.assunto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.assunto p {
+    display: inline;
+    font-size: 50px;
+    color: #FFEDE3;
 }
 
 html {
@@ -315,7 +331,7 @@ nav p {
     top: 0;
     bottom: 0;
     transform: skewy(-5deg);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(70px);
     background: #fff6e902;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
     border-radius: 15px;
@@ -340,8 +356,6 @@ nav p {
 .text-about {
     color: #FFEDE3;
     font-weight: 300;
-    /* font-size: 24px;
-    line-height: 34px; */
     font-size: var(--text-size);
     line-height: var(--text-height);
 }
@@ -375,7 +389,7 @@ nav p {
     font-weight: 300;
 }
 
-h2 {
+h1, h2, h3 {
     display: inline;
     font-size: 64px;
     font-weight: 600;
@@ -383,7 +397,7 @@ h2 {
 }
 
 /* O que podemos te oferecer */
-.h1-who-we-are {
+.topico {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,7 +405,7 @@ h2 {
     width: 100%;
 }
 
-.h1-who-we-are p {
+.topico p {
     display: inline;
     color: #FFEDE3;
     font-size: 48px;
@@ -399,12 +413,6 @@ h2 {
 }
 
 
-h1 {
-    display: inline;
-    font-size: 64px;
-    font-weight: 600;
-    color: #FFEDE3;
-}
 
 .container-oferecemos {
     position: relative;
@@ -426,7 +434,6 @@ h1 {
     z-index: 3;
     gap: 20px;
     max-width: 1200px;
-    font-size: 24px;
     color: #FFEDE3;
     width: 100%;
     transform: translatey(70px);
@@ -457,18 +464,22 @@ h1 {
 
 }
 
-.text-competencia {
+.title-principal-text {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #FFEDE3;
+    font-size: 24px;
+
+}
+
+.title-text {
+    color: #FFEDE3;
     font-weight: 300;
     font-size: var(--text-size);
     line-height: var(--text-height);
 
 }
 
-
-.title-oferecemos {
-    font-weight: 700;
-    margin-bottom: 20px;
-}
 
 .grid-backgrounds {
     position: relative;
@@ -574,6 +585,147 @@ h1 {
     z-index: 3;
 }
 
+/* Valores */
+
+.grid-cells {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container-cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cell {
+    position: absolute;
+    width: 500px;
+    margin-top: 80px;
+    z-index: 2;
+    height: 200px;
+    /* background: green; */
+}
+
+.cell-1 {
+    left: -250px;
+}
+
+.cell-2 {
+    top: 250px;
+    right: -250px;
+
+}
+
+.cell-3 {
+    top: 580px;
+
+}
+
+.text-cell {
+    margin-top: 100px;
+}
+
+
+.background-cell {
+    position: absolute;
+    overflow: hidden;
+    background: #fff6e902;
+    transform: rotate(-5deg);
+    height: 350px;
+    width: 700px;
+    border-radius: 1000px;
+    backdrop-filter: blur(70px);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
+
+}
+
+.white {
+    position: absolute;
+    filter: blur(100px);
+    background: #FFEDE3;
+}
+
+.white-1 {
+    width: 300px;
+    height: 50px;
+    left: 200px;
+    bottom: 0;
+}
+
+.white-2 {
+    width: 300px;
+    height: 50px;
+
+}
+
+.white-3 {
+    width: 150px;
+    height: 100px;
+    right: 50px;
+    bottom: 0;
+}
+
+.container-bubble-white {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+}
+
+.bubble-img-white {
+    position: absolute;
+    backdrop-filter: blur(20px);
+    border-radius: 500px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.308) 0%, #fff1ea1e 100%);
+    box-shadow: 10px 10px 10px #00000069;
+    z-index: 10;
+}
+
+.bubble-white-1 {
+    width: 45px;
+    bottom: 350px;
+    left: 150px;
+}
+
+.bubble-white-2 {
+    width: 110px;
+    left: 50px;
+    bottom: 180px;
+}
+
+.bubble-white-3 {
+    width: 75px;
+    left: 0;
+    bottom: 400px;
+}
+
+.bubble-white-4 {
+    width: 55px;
+    bottom: 70px;
+    right: 120px;
+}
+
+.bubble-white-5 {
+    width: 110px;
+    right: 50px;
+    bottom: 160px;
+}
+
+.bubble-white-6{
+    width: 75px;
+    right: 300px;
+    top: 100px;
+}
 
 /* contato */
 
