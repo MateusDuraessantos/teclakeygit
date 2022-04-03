@@ -7,12 +7,17 @@
 
 }
 
+
 :root {
     --text-size: 24px;
     --text-height: 30px;
-
     --mg-top: 70px;
 
+}
+
+.header-cont, .background-contato, .banner-grid, .background-about, .grid-oferecemos, .grid-cells, .cont-container, .background-contato {
+    width: 100%;
+    max-width: 1200px;
 }
 
 .assunto {
@@ -210,8 +215,6 @@ header {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    max-width: 1200px;
     height: 100px;
     background: #161616;
     transition: .2s;
@@ -271,8 +274,6 @@ nav p {
     display: grid;
     grid-template-columns: 770px 1fr;
     margin: auto;
-    max-width: 1200px;
-    width: 80%;
     height: 70%;
     z-index: 2;
 }
@@ -336,8 +337,6 @@ nav p {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
     border-radius: 15px;
     overflow: hidden;
-    width: 80vw;
-    max-width: 1200px;
     max-height: 500px;
     margin: auto;
 }
@@ -397,6 +396,7 @@ h1, h2, h3 {
 }
 
 /* O que podemos te oferecer */
+
 .topico {
     display: flex;
     justify-content: center;
@@ -411,8 +411,6 @@ h1, h2, h3 {
     font-size: 48px;
     font-weight: 300;
 }
-
-
 
 .container-oferecemos {
     position: relative;
@@ -433,7 +431,6 @@ h1, h2, h3 {
     display: grid;
     z-index: 3;
     gap: 20px;
-    max-width: 1200px;
     color: #FFEDE3;
     width: 100%;
     transform: translatey(70px);
@@ -529,12 +526,13 @@ h1, h2, h3 {
     right: 0;
 }
 
-/* ------------- BACKGROUND 1 ------------- */
 .blaves {
     position: relative;
     width: 100%;
     height: 100%;
 }
+
+/* ------------- BACKGROUND 1 ------------- */
 
 .background-competencia-1 {
     position: absolute;
@@ -588,11 +586,7 @@ h1, h2, h3 {
 /* Valores */
 
 .grid-cells {
-    display: flex;
-    flex-direction: column;
     height: 900px;
-    width: 100%;
-    max-width: 1200px;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -721,9 +715,9 @@ h1, h2, h3 {
     bottom: 160px;
 }
 
-.bubble-white-6{
+.bubble-white-6 {
     width: 75px;
-    right: 300px;
+    right: 30px;
     top: 100px;
 }
 
@@ -743,8 +737,6 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
-    width: 100vw;
     height: 100vh;
     max-height: 800px;
     margin: auto;
@@ -796,10 +788,8 @@ h1, h2, h3 {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.473);
     border-radius: 15px;
     overflow: hidden;
-    width: 100%;
     height: 600px;
     max-height: 500px;
-    max-width: 1200px;
     z-index: 2;
 }
 
@@ -909,4 +899,50 @@ footer p {
 footer img {
     height: 55px;
     padding-right: 10px;
+}
+
+
+@media (max-width: 1500px) {
+
+    :root {
+        --text-size: 18px;
+        --text-height: 26px;
+        --mg-top: 70px;
+    }
+
+
+    .header-cont, .background-contato, .banner-grid, .background-about, .grid-oferecemos, .grid-cells, .cont-container, .background-contato {
+        max-width: 1200px;
+    }
+
+
+    .background-competencia-1, .background-competencia-2, .background-competencia-3, .background-competencia-4 {
+        height: 250px;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+
+    /* ------------- BACKGROUND 1 ------------- */
+
+    .background-competencia-1 {
+        width: 100vw;
+        max-width: 1100px;
+    }
+
+    /* ------------- BACKGROUND 2 ------------- */
+    .background-competencia-2 {
+        width: 500px;
+    }
+
+    /* ------------- BACKGROUND 3 ------------- */
+    .background-competencia-3 {
+        width: 500px;
+    }
+
+    /* ------------- BACKGROUND 4 ------------- */
+
+    .background-competencia-4 {
+        width: 100vw;
+        max-width: 1100px;
+    }
 }
