@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeclaKey</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 
 </head>
 
 <body id="subir">
 
-    <a href="#subir"><img class="top" src="assets/icons/arrow.svg" alt="Ir para o topo"></a>
+    <a class="decoration-none" href="#subir"><img class="top" src="assets/icons/arrow.svg" alt="Ir para o topo"></a>
 
     <div class="social-media">
         <!-- Intagram -->
@@ -38,25 +41,25 @@
                 <p>TeclaKey</p>
             </div>
             <nav>
-                <a href="#inicio">
+                <a class="a" href="#inicio">
                     <p class="nav-p">início</p>
                 </a>
 
                 <p>|</p>
 
-                <a href="#sobre">
-                    <p class="nav-p">quem somos</p>
+                <a class="a" href="#sobre">
+                    <p class="nav-p">quem somos?</p>
                 </a>
 
                 <p>|</p>
 
-                <a href="#oferecemos">
+                <a class="a" href="#oferecemos">
                     <p class="nav-p">o que oferecemos</p>
                 </a>
 
                 <p>|</p>
 
-                <a href="#contato">
+                <a class="a" href="#contato">
                     <p class="nav-p">contato</p>
                 </a>
             </nav>
@@ -72,7 +75,7 @@
                     <p>&lt;
                     <p>
                     </p>
-                    Saindo do passado em direção ao futuro</p>
+                    Saindo do passado <br> em direção ao futuro</p>
                     <p>/&gt;</p>
                 </div>
                 <button class="quero">Quero um site</button>
@@ -96,7 +99,14 @@
 
     <main>
 
-        <!-- Quem somos -->
+        <!-- Quem somos? -->
+        <div class="title">
+            <p>
+                &lt;
+            </p>
+            <h2 class="hh">Quem somos?</h2>
+            <p>/&gt;</p>
+        </div>
 
         <div class="cont-container" id="sobre">
             <div class="container-bubble-1">
@@ -107,13 +117,7 @@
             </div>
             <div class="container-about">
                 <div class="about">
-                    <div class="title-about">
-                        <p>
-                            &lt;
-                        </p>
-                        <h2>Quem somos</h2>
-                        <p>/&gt;</p>
-                    </div>
+
                     <p class="text-about"> &nbsp; Somos uma empresa focada na criação de websites, oferecendo a melhor
                         experiência possível as
                         pessoas que
@@ -130,57 +134,55 @@
 
         <!-- <O que podemos te oferecer?/> -->
 
-        <div class="assunto">
+        <div class="title">
 
             <p>&lt;</p>
-            <h1>O que podemos te oferecer?</h1>
+            <h1 class="hh">O que podemos te oferecer?</h1>
             <p>/&gt;</p>
 
         </div>
 
-        <div class="container-oferecemos">
+        <div class="container-oferecemos" id="oferecemos">
             <div class="grid-oferecemos">
-                <div>
-                    <div class="competencias-1">
-                        <p class="title-principal-text">Design</p>
-                        <p class="title-text"> &nbsp; Desenvolvemos uma identidade visual e layouts para seu
-                            negócio,
-                            buscando sempre valorizar sua identidade, produtos e valores.</p>
-                    </div>
-
-
-                    <div class="competencias-1">
-                        <p class="title-principal-text">Hospedagem</p>
-
-                        <p class="title-text"> &nbsp; Para que tudo apareça na tela do seu dispositivo, é
-                            necessário
-                            que esses códigos estejam armazena na internet, nós podemos fazer isso por você.</p>
-                    </div>
+                <div class="competencias-1">
+                    <p class="title-principal-text">Design</p>
+                    <p class="title-text"> &nbsp; Desenvolvemos uma identidade visual e layouts para seu
+                        negócio,
+                        buscando sempre valorizar sua identidade, produtos e valores.</p>
                 </div>
 
-                <div class="second-column">
-                    <div class="competencias-2">
-                        <p class="title-principal-text">HTML e CSS</p>
 
-                        <p class="title-text"> &nbsp; Com o website desenhada, o transformamos em códigos, para
-                            que,
-                            ao final, possa ser publicado na internet divulgando você ainda mais!</p>
-                    </div>
+                <div class="competencias-1">
+                    <p class="title-principal-text padding-top">Hospedagem</p>
 
+                    <p class="title-text"> &nbsp; Para que tudo apareça na tela do seu dispositivo, é
+                        necessário
+                        que esses códigos estejam armazena na internet, nós podemos fazer isso por você.</p>
+                </div>
 
-                    <div class="competencias-2">
-                        <p class="title-principal-text">UX/UI</p>
+                <div class="competencias-2">
+                    <p class="title-principal-text">HTML e CSS</p>
 
-                        <p class="title-text"> &nbsp; Na criação desses layouts, ficamos focados em criar um
-                            website
-                            útil e fácil, para que seus
-                            visitantes
-                            entendam mais sobre você e seu negócio.</p>
+                    <p class="title-text"> &nbsp; Com o website desenhada, o transformamos em códigos, para
+                        que,
+                        ao final, possa ser publicado na internet divulgando você ainda mais!</p>
+                </div>
 
 
-                    </div>
+                <div class="competencias-2">
+                    <p class="title-principal-text padding-top">UX/UI</p>
+
+                    <p class="title-text"> &nbsp; Na criação desses layouts, ficamos focados em criar um
+                        website
+                        útil e fácil, para que seus
+                        visitantes
+                        entendam mais sobre você e seu negócio.</p>
+
+
                 </div>
             </div>
+
+
             <div class="grid-backgrounds">
 
                 <div class="blaves">
@@ -209,82 +211,83 @@
 
         <!-- Valores -->
 
-        
-        <div class="assunto">
+
+        <div class="title" id="valores" style="transform: translatey(-55px);">
             <p> &lt;</p>
-            <h3>Valores</h3>
+            <h3 class="hh">Valores</h3>
             <p>/&gt;</p>
         </div>
 
-            <div class="grid-cells">
+        <div class="grid-cells">
 
-                <div class="container-cell cell-1">
-                    <div class="cell text-cell">
-                        <p class="title-principal-text">Transparência</p>
+            <div class="container-cell cell-1">
+                <div class="cell text-cell">
+                    <p class="title-principal-text">Transparência</p>
 
-                        <p class="title-text"> &nbsp; Buscamos manter todos os integrantes envolvidos e atualizados nos
-                            projetos e atividades de cada um.</p>
-                    </div>
-                    <div class="background-cell">
-                        <div class="white white-1"></div>
-                    </div>
+                    <p class="title-text"> &nbsp; Buscamos manter todos os integrantes envolvidos e atualizados nos
+                        projetos e atividades de cada um.</p>
                 </div>
-
-                <div class="container-cell cell-2">
-                    <div class="cell  text-cell">
-                        <p class="title-principal-text">Inovação</p>
-
-                        <p class="title-text"> &nbsp; Buscamos sempre trazer algo novo a partir do que aprendemos ao
-                            longo
-                            dos trabalhos realizados, trazendo mais qualidade em futuros projetos.</p>
-                    </div>
-                    <div class="background-cell">
-                        <div class="white white-2"></div>
-                    </div>
+                <div class="background-cell">
+                    <div class="white white-1"></div>
                 </div>
+            </div>
 
-                <div class="container-cell cell-3">
-                    <div class="cell text-cell">
-                        <p class="title-principal-text">Impulsionadora</p>
+            <div class="container-cell cell-2 deg">
+                <div class="cell  text-cell">
+                    <p class="title-principal-text">Inovação</p>
 
-                        <p class="title-text"> &nbsp; Buscamos fazer com que as pessoas cresçam, evoluindo
-                            profissionalmente
-                            e humanamente, sempre!</p>
-                    </div>
-                    <div class="background-cell">
-                        <div class="white white-3"></div>
-                    </div>
+                    <p class="title-text"> &nbsp; Buscamos sempre trazer algo novo a partir do que aprendemos ao
+                        longo
+                        dos trabalhos realizados, trazendo mais qualidade em futuros projetos.</p>
                 </div>
-
-                <div class="container-bubble-white">
-                    <img class="bubble-img-white bubble-white-1" src="assets/icons/bubble_white.svg" alt="">
-
-                    <img class="bubble-img-white bubble-white-2" src="assets/icons/bubble_white.svg" alt="">
-
-                    <img class="bubble-img-white bubble-white-3" src="assets/icons/bubble_white.svg" alt="">
-
-                    <img class="bubble-img-white bubble-white-4" src="assets/icons/bubble_white.svg" alt="">
-
-                    <img class="bubble-img-white bubble-white-5" src="assets/icons/bubble_white.svg" alt="">
-
-                    <img class="bubble-img-white bubble-white-6" src="assets/icons/bubble_white.svg" alt="">
-
+                <div class="background-cell">
+                    <div class="white white-2"></div>
                 </div>
+            </div>
+
+            <div class="container-cell cell-3">
+                <div class="cell text-cell">
+                    <p class="title-principal-text">Impulsionadora</p>
+
+                    <p class="title-text"> &nbsp; Buscamos fazer com que as pessoas cresçam, evoluindo
+                        profissionalmente
+                        e humanamente, sempre!</p>
+                </div>
+                <div class="background-cell">
+                    <div class="white white-3"></div>
+                </div>
+            </div>
+
+            <div class="container-bubble-white">
+                <img class="bubble-img-white bubble-white-1" src="assets/icons/bubble_white.svg" alt="">
+
+                <img class="bubble-img-white bubble-white-2" src="assets/icons/bubble_white.svg" alt="">
+
+                <img class="bubble-img-white bubble-white-3" src="assets/icons/bubble_white.svg" alt="">
+
+                <img class="bubble-img-white bubble-white-4" src="assets/icons/bubble_white.svg" alt="">
+
+                <img class="bubble-img-white bubble-white-5" src="assets/icons/bubble_white.svg" alt="">
+
+                <img class="bubble-img-white bubble-white-6" src="assets/icons/bubble_white.svg" alt="">
+
+            </div>
 
         </div>
 
         <!-- Entre em contato -->
 
+        <div class="title">
+            <p>
+                &lt;</p>
+            <h4 class="hh">Entre em contato</h4>
+            <p>/&gt;</p>
+        </div>
 
         <div class="cont-to-line-cyan">
             <div class="cont-container" id="contato">
                 <div class="contato">
-                    <div class="title-contato">
-                        <p>
-                            &lt;</p>
-                        <h4>Entre em contato</h4>
-                        <p>/&gt;</p>
-                    </div>
+
 
                     <div class="infos-contato">
                         <p><strong>WhatsApp:</strong>55+ (11) 96593-9822</p>
@@ -333,6 +336,12 @@
         <img src="assets/logo.svg" alt="logomarca da empresa Tecla Key">
         <p>@ TeclaKey - 2022</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
