@@ -18,7 +18,7 @@ html body {
     font-family: 'Poppins', sans-serif;
     padding-top: 100px;
     background: #161616;
-    background-image: url('assets/texture-without-background.png');
+    background-image: url('assets/background-texture.png');
     background-size: 700px;
 }
 
@@ -879,8 +879,7 @@ main {
     align-items: center;
     z-index: 2;
     width: 100%;
-    position: sticky;
-    top: 0;
+
 }
 
 .title p {
