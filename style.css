@@ -122,33 +122,6 @@ body::-webkit-scrollbar-thumb {
 
 /* bubble */
 
-
-@keyframes bubble {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    20% {
-        transform: translate(-200px, 100px);
-    }
-
-    40% {
-        transform: translate(-50px, 200px);
-    }
-
-    60% {
-        transform: translate(100px, 60px);
-    }
-
-    80% {
-        transform: translate(-200px, 200px);
-    }
-
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
 .container-bubble {
     position: absolute;
     display: flex;
@@ -168,9 +141,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 500px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.308) 0%, #ff55001e 100%);
     box-shadow: 10px 10px 10px #00000069;
-    animation-name: bubble;
-    animation-duration: 70s;
-    animation-iteration-count: infinite;
 }
 
 
