@@ -1523,3 +1523,41 @@ footer img {
     }
 
 }
+
+@media (max-width: 500px) {
+    .grid-backgrounds {
+        width: calc(100% - 20px);
+    }
+
+    .background-contato,
+    .banner-grid,
+    .background-about,
+    .grid-oferecemos,
+    .grid-cells,
+    .cont-container,
+    .background-contato {
+        max-width: calc(100% - 20px);
+    }
+
+    .cell {
+        width: calc(100% - 85px);
+        /* background: green; */
+    }
+
+    .bubble-white-5 {
+        width: 50px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .bubble-white-6 {
+        width: 50px;
+        right: -0px;
+        top: -20px;
+    }
+
+    footer {
+        margin: 50px 0 40px 0;
+    }
+
+}
